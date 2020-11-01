@@ -1,0 +1,49 @@
+baseurl = "/"               # Your domain name.
+languageCode = "en-us"
+theme = "hello-friend"
+paginate = 5                # How many posts you want to appear per page.
+
+[params]
+  contentTypeName = "posts" # `content/posts` will contain blog posts.
+  defaultTheme = "dark"     # "light" or "dark"
+  showMenuItems = 1         # The number of menu items. Overflow will be in submenu.
+  showReadingTime = true    # Displays reading time on each blog post.
+  toc = false               # Displays a table of contents on each blog post.
+
+[languages]
+  [languages.en]
+    title = "hugo-digitalocean"
+    subtitle = "A Hugo/DigitalOcean Demo"
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    writtenBy = "Written by"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+
+    # Logo Text
+    [languages.en.params.logo]
+      logoText = "hugo-digitalocean"
+      logoHomeLink = "/"
+
+    # Logo Image
+    # [languages.en.params.logo]
+    #   path = "/img/your-example-logo.svg"
+    #   alt = "Your example logo alt text"
+
+    [languages.en.menu]
+      # Menu Item
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      # Menu Item
+      [[languages.en.menu.main]]
+        identifier = "archive"
+        name = "Archive"
+        url = "/archive"
